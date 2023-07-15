@@ -1,6 +1,6 @@
 /* Start Feat */
 .feat {
-    padding: calc(var(--section-padding) + 30px);
+    padding: calc(var(--section-padding) + 30px) 0;
 }
 .feat .container {
     display: grid;
