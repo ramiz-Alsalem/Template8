@@ -1,0 +1,242 @@
+/* Start Search */
+.search {
+    padding: calc(var(--section-padding)) 0;
+}
+.search .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search .container .text-content {
+    margin-right: 20px;
+}
+.search .container .text-content p {
+    color: #000000b3
+}
+.search .container .search-container {
+    padding: 50px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.search .container .search-container form {
+    display: flex;
+    margin-bottom: 20px;
+}
+.search .container .search-container form input {
+    padding: 20px 0;
+    outline: none;
+    border: none;
+}
+.search .container .search-container form input[type="text"] {
+    border: 1px solid #ededed;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 45%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.search .container .search-container form select {
+    border: none;
+    width: 15%;
+    outline: none;
+    border: 1px solid #ededed;
+}
+.search .container .search-container form input[type="submit"] {
+    width: 40%;
+    background-color: #38d39f;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.search .container .search-container form input::placeholder {
+    font-size: 14px;
+    color: black
+}
+.search .container .search-container form select {
+    font-size: 14px;
+}
+.search .container .search-container .prices span {
+    padding: 5px 10px;
+    border: 1px solid #ffffff42;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.search .container .search-container .prices span strong {
+    color: #38d39f;
+    font-size: 16px;
+    font-weight: 600;
+}
+@media (max-width: 1199px) {
+    .search .container {
+        flex-direction: column;
+    }
+    .search .container .text-content {
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    .search .container .prices {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+    .search .container .prices span {
+        margin-bottom: 10px;
+    }
+}
+/* End Search */
+/* Start Table */
+.table {
+    padding: calc(var(--section-padding)) 0;
+    overflow: auto;
+}
+.table::-webkit-scrollbar {
+    width: 20px;
+}
+.table::-webkit-scrollbar-track {
+    background-color: rgb(235, 235, 235);
+}
+.table::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+.table::-webkit-scrollbar-thumb:hover {
+    background-color: #481aff;
+}
+.table .text {
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
+    line-height: 2;
+}
+.table .text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.table .text p {
+    color: #666666;
+}
+@media (max-width: 767px) {
+    .table .text {
+        width: 100%;
+    }
+}
+.table .container table {
+    margin: auto;
+    width: 1100px;
+}
+.table .container table tr th {
+    padding: 30px 30px;
+    background-color: #38d39f;
+    color: white;
+}
+.table .container table tr td {
+    border: 1px solid #dddddd30;
+    padding: 20px 30px;
+    text-align: center;
+    font-weight: 500;
+}
+.table .container table tr td:first-child {
+    background-color: var(--main-color);
+    color: white;
+}
+.table .container table tr td:nth-child(3), 
+.table .container table tr td:nth-child(5) {
+    background-color: #f0f0f0;
+}
+.table .container table tr td button {
+    padding: 10px
+}
+/* End Table */
+/* Start Questions */
+.questions {
+    padding: calc(var(--section-padding) + 30px) 0;
+    background-color: #fafafafa;
+}
+.questions .text {
+    text-align: center;
+    margin: 0 auto 80px;
+    width: 40%;
+    line-height: 2;
+}
+.questions .text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.questions .text p {
+    color: #666666;
+}
+.questions .container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    align-items: flex-start;
+    gap: 20px 30px;
+}
+.questions .container .col {
+    display: grid;
+    gap: 10px;
+}
+@media (max-width: 767px) {
+    .questions .container {
+        grid-template-columns: 1fr;
+    }
+}
+.questions .container .question {
+    box-shadow: 0 0 5px 0 #dddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+}
+.questions .container .question div {
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ededed;
+    font-weight: 500;
+    cursor: pointer;
+}
+.questions .container .question div i {
+    font-size: 14px;
+    color: #38d39f;
+}
+.questions .container .question:nth-child(1) div i {
+    rotate: 180deg;
+}
+.questions .container .question p {
+    background-color: white;
+    border: 1px solid #ededed;
+    line-height: 2;
+    color: #4d4d4d;
+    height: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.questions .container .show {
+    overflow: visible;
+}
+.questions .container .show .answer {
+    height: auto;
+    padding: 20px;
+}
+@media (max-width: 767px) {
+    .questions .text {
+        width: 100%;
+    }
+}
+/* End Questions */
